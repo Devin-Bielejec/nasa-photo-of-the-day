@@ -6,7 +6,7 @@ import axios from 'axios';
 import {TitleComponent} from "./components/TitleComponent/TitleComponent";
 import {PictureComponent} from "./components/PictureComponent/PictureComponent";
 import {ExplanationComponent} from "./components/ExplanationComponent/ExplanationComponent";
-
+import {DateComponent} from "./components/DateComponent/DateComponent";
 
 function App() {
   const [info, setInfo] = useState("");
@@ -28,6 +28,7 @@ function App() {
       <TitleComponent title={info.title}/>
       <PictureComponent picSrc={info.url}/>
       <ExplanationComponent explanation={info.explanation}/>
+      <DateComponent date={info.date}/>
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun 🚀!
