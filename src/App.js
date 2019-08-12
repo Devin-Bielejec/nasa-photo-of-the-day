@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 function App() {
+  const [data, changeData] = useState();
   return (
     <div className="App">
       <p>
