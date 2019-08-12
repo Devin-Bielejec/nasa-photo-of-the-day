@@ -8,17 +8,17 @@ const Img = styled.img`
     width: 75%;
 `
 
-const ImgDiv = styled.div`
+const FlexDiv = styled.div`
     display: flex;
     justify-content: center;
 `
 
 function PictureComponent(props) {
     return (
-        <ImgDiv>
+        <FlexDiv>
             <Img src={props.picSrc} alt={props.alt}/>
-        </ImgDiv>
+        </FlexDiv>
     );
 }
 
-export {PictureComponent};
+export {PictureComponent, FlexDiv};
